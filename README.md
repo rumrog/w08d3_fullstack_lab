@@ -1,24 +1,24 @@
 # Project Setup Checklist
 
-Initialize project with Vue
+1. Initialize project with Vue
 ```bash
 vue create project_name
 ```
 
 ## Front-End `/client`
 
-Create `client` folder
+2. Create `client` folder
 ```
 cd project_name
 mkdir client
 ```
-Move the following files to `client`
+3. Move the following files to `client`
 ```
 ..
 mv README.md babel.config.js node_modules package-lock.json package.json public .gitignore src client
 ```
 
-Create services folder and ProjectService.js
+4. Create services folder and ProjectService.js
 
 ```
 cd client
@@ -28,53 +28,53 @@ touch src/components/services/ProjectService.js
 
 ## Back-End `/server`
 
-On `/project_name`,
+5. On `/project_name`,
 create `server` folder. 
 
 ```
 mkdir server
 ```
-Initiate `server`
+6. Initiate `server`
 
 ```
 cd server
 npm init -y
 ```
 
-Create `db` and `helpers` folders within `server` plus `server.js`
+7. Create `db` and `helpers` folders within `server` plus `server.js`
 ```
 mkdir db helpers
 touch server.js
 ```
 
-Create `seeds.js` and `create_routers.js` inside `db` and `helpers`
+8. Create `seeds.js` and `create_routers.js` inside `db` and `helpers`
 
 ```
 touch db/seeds.js helpers/create_routers.js
 ```
 
-Install nodemon
+9. Install nodemon
 ```
 npm install -D nodemon
 ```
 
-Install express, mongodb and cors
+10. Install express, mongodb and cors
 ```
 npm install express mongodb cors
 ```
 
-Add the following to /server/package.json
+11. Add the following to /server/package.json
 
 ```
 "scripts": {
-    "start": "node server.js", // NEW
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server:dev": "nodemon server.js", // NEW
-    "seeds": "mongo < ./db/seeds.js" // NEW
+    "server:dev": "nodemon server.js",
+    "seeds": "mongo < ./db/seeds.js"
   },
 ```
 
-Copy .gitignore from `client`
+12. Copy .gitignore from `client`
 
 ```
 cp ../client/.gitignore .
@@ -84,7 +84,7 @@ cp ../client/.gitignore .
 
 ### Server
 
-Run express:
+13. Run express:
 
 ```
 npm run server:dev
@@ -92,6 +92,8 @@ npm run server:dev
 
 ### Client
 
+14. Run client server
+    
 ```
 npm run serve
 ```
