@@ -1,5 +1,11 @@
 <template>
   <div class="booking">
+      <h2>{{ booking.name }}</h2>
+      <p>{{ booking.email }}</p>
+      <p>{{ booking.selected }}</p>
+  
+      <button v-on:click="deleteBooking">Delete Booking</button>
+  </div>
 </template>
 
 <script>
