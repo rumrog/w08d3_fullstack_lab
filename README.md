@@ -76,5 +76,5 @@ npm run server:dev
 ### Client
 
 ```
-num run serve
+npm run serve
 ```
