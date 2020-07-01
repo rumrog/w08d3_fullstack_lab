@@ -16,11 +16,11 @@
            <option>Checked in</option>
            <option>Checked out</option>
         </select>
-        
+
         <!-- <v-select :options="['Checked in', 'Checked out']"></v-select> -->
 
       </div>
-      <input type="submit" value="Save" id="save" />
+      <input class="button" type="submit" value="Save" id="save" />
     </form>
 </template>
 

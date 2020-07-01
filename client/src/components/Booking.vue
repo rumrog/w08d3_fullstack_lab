@@ -32,14 +32,15 @@ export default {
             BookingService.deleteBooking(this.booking._id)
             .then(() => eventBus.$emit('booking-deleted', this.booking._id))
         },
-          updateBooking() { 
+        updateBooking() { 
+          this.booking.selected = this.selected;
           BookingService.updateBooking(this.booking._id, this.booking)
           .then(() => eventBus.$emit('booking-updated', this.booking))
         }
     },
-    mounted() {
-       this.updateBooking()
-    }
+    // mounted() {
+    //    this.updateBooking()
+    // }
 }
 </script>
 

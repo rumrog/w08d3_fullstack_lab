@@ -35,6 +35,12 @@ export default {
       this.bookings.splice(index, 1)
     })
 
+    eventBus.$on('booking-updated', (updatedBooking) => {
+      let index = this.bookings.findIndex(booking => booking._id === updatedBooking._id)
+      this.bookings.splice(index, 1, updatedBooking)
+    })
+
+
   },
   methods: {
     fetchBookings() {
