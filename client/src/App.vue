@@ -7,7 +7,7 @@
 
 <script>
 import BookingForm from './components/BookingForm.vue';
-import BookingsGrid from './components/BookingGrid.vue';
+import BookingGrid from './components/BookingGrid.vue';
 import BookingService from './services/BookingService.js';
 import {eventBus} from './main.js';
 

@@ -1,6 +1,6 @@
 <template>
   <div id="bookingGrid">
-      <booking v-for="booking in bookings" :key="booking" :booking="booking" />
+      <booking v-for="booking in bookings" :booking="booking" />
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Booking from './Booking.vue';
 
 export default {
-  name: 'bookings-grid',
+  name: 'booking-grid',
   components: {
     'booking': Booking
   },

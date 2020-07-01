@@ -10,13 +10,14 @@
         <input type="text" id="email" v-model="email" required/>
       </div>
       <div class="formWrap">
+        <span>Selected: {{ selected }}</span>
         <select v-model="selected">
           <option disabled value="">Please select one</option>
            <option>Checked in</option>
            <option>Checked out</option>
         </select>
-        <span>Selected: {{ selected }}</span>
       </div>
+      <input type="submit" value="Save" id="save" />
     </form>
 </template>
 

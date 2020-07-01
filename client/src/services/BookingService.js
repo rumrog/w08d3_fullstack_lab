@@ -3,15 +3,15 @@ const baseURL = 'http://localhost:3000/api/bookings/'
 export default {
     getBookings() {
         return fetch(baseURL)
-            .then(res => res.JSON())
+            .then(res => res.json())
     },
 
-    postBookings(payload) {
+    postBooking(payload) {
         return fetch(baseURL, {
             method: 'POST',
             body: JSON.stringify(payload),
             headers: {
-                'Content-Type': 'applocation/json'
+                'Content-Type': 'application/json'
             }
         })
             .then(res => res.json())
