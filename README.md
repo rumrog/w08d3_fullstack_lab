@@ -1,16 +1,23 @@
 # Project Setup Checklist
 
-## Front-End `project/client`
-Initiate vue project/client
+## Front-End `/client`
+On the project parent folder, initiate vue /client
 
 ```
-vue create project_name
+vue create client
 ```
 
 Create .gitignore
 
 ```
 touch .gitignore
+```
+
+Set .gitignore to not include:
+
+```
+# inside .gitignore
+node_modules/
 ```
 
 Create services folder and ProjectService.js
@@ -21,11 +28,19 @@ cd ../services
 touch ProjectService.js
 ```
 
-## Back-End `project/server`
+## Back-End `/server`
 
-Initiate project/server
+On the project parent folder, 
+create /server folder
 
 ```
+mkdir server
+```
+
+Initiate /server
+
+```
+cd server
 npm init
 ```
 
@@ -33,6 +48,12 @@ Create .gitignore
 
 ```
 touch .gitignore
+```
+Set .gitignore to not include:
+
+```
+# inside .gitignore
+node_modules/
 ```
 
 Install nodemon
