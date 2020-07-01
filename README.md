@@ -1,59 +1,50 @@
 # Project Setup Checklist
 
+Create project's parent folder
+```
+mkdir project_name
+```
+
 ## Front-End `/client`
-On the project parent folder, initiate vue /client
+On project's parent folder, initiate vue /client
 
 ```
+cd project_name
 vue create client
-```
-
-Create .gitignore
-
-```
-touch .gitignore
-```
-
-Set .gitignore to not include:
-
-```
-# inside .gitignore
-node_modules/
 ```
 
 Create services folder and ProjectService.js
 
 ```
 mkdir src/components/services
-cd ../services
-touch ProjectService.js
+touch src/components/services/ProjectService.js
 ```
 
 ## Back-End `/server`
 
-On the project parent folder, 
-create /server folder
+On project's parent folder, 
+create `server` folder. 
 
 ```
 mkdir server
 ```
-
 Initiate /server
 
 ```
 cd server
-npm init
+npm init -y
 ```
 
-Create .gitignore
+Create `db` and `helpers` folders within `server` plus `server.js`
+```
+mkdir db helpers
+touch server.js
+```
+
+Create `seeds.js` and `create_routers.js` inside `db` and `helpers`
 
 ```
-touch .gitignore
-```
-Set .gitignore to not include:
-
-```
-# inside .gitignore
-node_modules/
+touch db/seeds.js helpers/create_routers.js
 ```
 
 Install nodemon
@@ -77,16 +68,15 @@ Add the following to /server/package.json
   },
 ```
 
+Copy .gitignore from `client`
+
+```
+cp ../client/.gitignore .
+```
+
 ## Start Servers
 
 ### Server
-
-
-<!-- Seed the database:
-
-```
-npm run seeds
-``` -->
 
 Run express:
 
