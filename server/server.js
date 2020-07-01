@@ -16,4 +16,8 @@ MongoClient.connect('mongodb://localhost:27017')
     const bookingsRouter = createRouter(bookingsCollection);
     app.use('/api/bookings', bookingsRouter);
 })
-.catch(console.err)
+.catch(console.err);
+
+app.listen(3000, function() {
+    console.log(`Listening on port ${ this.address().port}`);
+});
