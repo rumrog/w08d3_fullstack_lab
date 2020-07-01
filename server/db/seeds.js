@@ -1,12 +1,10 @@
-const { Db } = require("mongodb");
-
 use hotel;
 db.dropDatabase();
 
 db.bookings.insertMany([
   {
     name: "Robert Bruce",
-    
-    c
+    email: "robert@bruce.com",
+    checked_in: true
   }
-])
+]);
