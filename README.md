@@ -6,7 +6,7 @@ mkdir project_name
 ```
 
 ## Front-End `/client`
-On project's parent folder, initiate vue /client
+On `/project_name`, initiate `client`
 
 ```
 cd project_name
@@ -22,13 +22,13 @@ touch src/components/services/ProjectService.js
 
 ## Back-End `/server`
 
-On project's parent folder, 
+On `/project_name`,
 create `server` folder. 
 
 ```
 mkdir server
 ```
-Initiate /server
+Initiate `server`
 
 ```
 cd server
