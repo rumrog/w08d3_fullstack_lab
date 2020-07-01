@@ -1,21 +1,27 @@
 # Project Setup Checklist
 
-Create project's parent folder
-```
-mkdir project_name
+Initialize project with Vue
+```bash
+vue create project_name
 ```
 
 ## Front-End `/client`
-On `/project_name`, initiate `client`
 
+Create `client` folder
 ```
 cd project_name
-vue create client
+mkdir client
+```
+Move the following files to `client`
+```
+..
+mv README.md babel.config.js node_modules package-lock.json package.json public .gitignore src client
 ```
 
 Create services folder and ProjectService.js
 
 ```
+cd client
 mkdir src/components/services
 touch src/components/services/ProjectService.js
 ```
