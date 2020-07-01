@@ -68,6 +68,16 @@ li {
 a {
   color: #42b983;
 }
+
+.button {
+	color: #fff;
+	border: none;
+  border-radius: 10px;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 10px;
+	background: rgba(0, 0, 0, 0.664);
+}
 </style>
 
 

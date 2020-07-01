@@ -3,6 +3,7 @@
       <h2>{{ booking.name }}</h2>
       <p>{{ booking.email }}</p>
         <select v-model="selected">
+           <option disabled value="">Please select one</option>
            <option>Checked in</option>
            <option>Checked out</option>
         </select>
@@ -37,10 +38,7 @@ export default {
           BookingService.updateBooking(this.booking._id, this.booking)
           .then(() => eventBus.$emit('booking-updated', this.booking))
         }
-    },
-    // mounted() {
-    //    this.updateBooking()
-    // }
+    }
 }
 </script>
 

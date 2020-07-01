@@ -61,6 +61,7 @@ const createRouter = function (collection) {
         const id = req.params.id
         updatedData = req.body
         delete updatedData._id
+        
         collection
         .updateOne(
             { _id: ObjectID(id) },
