@@ -5,6 +5,6 @@ db.bookings.insertMany([
   {
     name: "Robert Bruce",
     email: "robert@bruce.com",
-    checked_in: true
+    selected: "Checked in"
   }
 ]);

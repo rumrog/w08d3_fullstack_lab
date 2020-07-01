@@ -34,6 +34,7 @@ export default {
       let index = this.bookings.findIndex(booking => booking._id === id)
       this.bookings.splice(index, 1)
     })
+
   },
   methods: {
     fetchBookings() {
@@ -45,12 +46,22 @@ export default {
 </script>
 
 <style>
-#app {
+
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background: url('./assets/hotel.png') no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  margin: 0;
 }
+
+
+
 </style>
